@@ -1,0 +1,137 @@
+.boxWrapper {
+    width: 80%;
+    height: 78vh;
+    background-color: #ffffff;
+    border-radius: 20px;
+    padding: 30px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.box {
+    padding: 20px;
+    overflow-y: auto;
+}
+
+.boxHeader {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 20px;
+}
+
+.boxHeader.todo {
+    border-bottom: 3px solid #2b2a37;
+}
+
+.boxHeader.indev {
+    border-bottom: 3px solid #1a429c;
+}
+
+.boxHeader.done {
+    border-bottom: 3px solid #1c91f4;
+}
+
+.boxHeader .taskLength {
+    color: #ffffff;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.boxHeader .dots:hover {
+    opacity: 0.7;
+}
+
+.boxHeader .dots:active {
+    color: #1c91f4;
+}
+
+.boxBody {
+    display: flex;
+    flex-direction: column;
+    row-gap: 30px;
+    margin-top: 20px;
+}
+
+.boxBody .taskWrapper {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+    border: 1px solid #d9d9d9;
+}
+
+.boxBody .taskWrapper .taskHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+.taskHeader .taskIcon {
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+}
+
+.taskHeader .taskIcon .icon,
+.taskHeader .taskIcon .iconTrash {
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.taskHeader .taskIcon .iconTrash:hover {
+    color: #f41c1c;
+}
+
+.taskHeader .taskIcon .icon:hover {
+    color: #1c91f4;
+}
+
+
+.boxBody .taskStatus {
+    color: #ffffff;
+    background-color: #2b2a37;
+    width: 20%;
+    text-align: center;
+    border-radius: 20px;
+}
+
+.boxBody .taskWrapper .taskDescription {
+    color: #64666c;
+}
+
+.boxBody .taskStatus.todo,
+.taskLength.todo {
+    background-color: #2b2a37;
+}
+
+.boxBody .taskStatus.indev,
+.taskLength.indev {
+    background-color: #1a429c;
+}
+
+.boxBody .taskStatus.done,
+.taskLength.done {
+    background-color: #1c91f4;
+}
+
+@media screen and (max-width: 1280px) {
+    .boxWrapper {
+        width: 75%;
+        gap: 0;
+    }
+
+    .boxBody .taskStatus {
+        color: #ffffff;
+        background-color: #2b2a37;
+        width: 40%;
+        font-size: 0.8rem;
+        text-align: center;
+        border-radius: 20px;
+    }
+}

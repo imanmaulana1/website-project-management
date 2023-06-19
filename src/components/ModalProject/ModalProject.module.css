@@ -1,0 +1,137 @@
+.modalBackground {
+    background-color: rgba(18, 18, 18, 0.521);
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    z-index: 99;
+}
+
+.wrapper {
+    background-color: #f2f5ea;
+    color: #000000;
+    width: 30%;
+    padding: 20px;
+    border-radius: 12px;
+    -webkit-border-radius: 12px;
+    -moz-border-radius: 12px;
+    -ms-border-radius: 12px;
+    -o-border-radius: 12px;
+
+    overflow: hidden;
+}
+
+.title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.title h1 {
+    font-size: 25px;
+    font-weight: 500;
+    color: #64666c;
+}
+
+.title span {
+    cursor: pointer;
+    font-size: 18px;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    transition: all 0.3s linear;
+}
+
+.title span:hover {
+    background-color: #f41c1c;
+    color: #ffffff;
+}
+
+.body {
+    margin: 30px 0 50px;
+}
+
+.body label {
+    font-size: 18px;
+}
+
+.body .input {
+    width: 85%;
+    background-color: #f2f5ea;
+    color: #000000;
+    border: 1px solid #d9d9d9;
+    outline: none;
+    margin-left: 5%;
+    padding: 6px 20px;
+    border-radius: 8px;
+    font-size: 18px;
+}
+
+.body .input:focus {
+    border: 1px solid #1c91f4;
+}
+
+.body .input.error {
+    border: 1px solid #f41c1c;
+}
+
+body form > p {
+    width: 92%;
+    color: #f41c1c;
+    text-align: end;
+}
+
+.footer {
+    text-align: end;
+}
+
+.footer button {
+    width: 100px;
+    font-size: 18px;
+}
+
+.footer button:nth-child(2) {
+    margin-right: 10px;
+    margin-left: 15px;
+    color: #000000;
+    background-color: #d9d9d9;
+}
+
+.footer button:nth-child(2):hover {
+    background-color: #e0e0e0;
+}
+
+@media screen and (max-width: 1280px) {
+    .body .input,
+    .body label,
+    .footer button {
+        font-size: 16px;
+    }
+
+    .body form > p {
+        width: 95%;
+        font-size: 14px;
+    }
+
+    .title h1 {
+        font-size: 18px;
+    }
+
+    .title span {
+        font-size: 16px;
+        width: 25px;
+        height: 25px;
+    }
+}

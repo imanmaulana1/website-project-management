@@ -1,0 +1,50 @@
+.boardHeader {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    padding: 30px;
+}
+
+.boardHeader h1 {
+    font-size: 32px;
+    font-weight: 500;
+    color: #64666c;
+}
+
+.boardHeader .btnGroup {
+    display: flex;
+    align-items: center;
+    column-gap: 20px;
+}
+
+.boardHeader .btn {
+    margin: 0;
+    width: 200px;
+    font-size: 18px;
+}
+
+.boardBody {
+    border-radius: 20px;
+    padding: 0 30px;
+    display: flex;
+    column-gap: 30px;
+}
+
+.boardHeader .membersWrap {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+@media screen and (max-width: 1280px) {
+    .boardHeader h1 {
+        font-size: 24px;
+        font-weight: 500;
+        color: #64666c;
+    }
+
+    .boardHeader .btn {
+        width: 180px;
+        font-size: 16px;
+    }
+}

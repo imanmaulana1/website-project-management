@@ -1,0 +1,58 @@
+.profileWrap {
+    width: 25%;
+    height: 83vh;
+    background-color: #ffffff;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.profile {
+    flex: 1;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 20px;
+}
+
+.profile .textUsername {
+    font-family: "Dancing Script", cursive;
+    font-size: 36px;
+}
+
+.profile .avatar {
+    width: 180px;
+}
+
+.profile .btn {
+    font-size: 18px;
+    width: 150px;
+}
+
+.project {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+/* 720p */
+@media screen and (max-width: 1280px) {
+    .profile .textUsername {
+        font-family: "Dancing Script", cursive;
+        font-size: 24px;
+    }
+
+    .profile .avatar {
+        width: 150px;
+    }
+
+    .profile .btn {
+        font-size: 16px;
+        width: 130px;
+    }
+}

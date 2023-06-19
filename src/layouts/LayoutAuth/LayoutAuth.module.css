@@ -1,0 +1,66 @@
+.nav {
+    padding: 30px;
+}
+
+.contentWrapper {
+    display: flex;
+    align-items: baseline;
+    margin-top: 3%;
+}
+
+.form {
+    flex: 1;
+}
+
+.hero {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+}
+
+.hero .cover {
+    width: 650px;
+    margin: auto;
+}
+
+.hero h1 {
+    width: 60%;
+    margin: auto;
+    color: #ffffff;
+    text-transform: capitalize;
+    text-align: center;
+    font-size: 48px;
+    font-weight: 300;
+}
+
+.hero span {
+    color: #1c91f4;
+    font-weight: 600;
+}
+
+/* 720p */
+@media screen and (max-width: 1280px) {
+    .contentWrapper {
+        margin-top: 2%;
+    }
+
+    .logo {
+        width: 100px;
+    }
+
+    .hero .cover {
+        width: 500px;
+        margin: auto;
+    }
+
+    .hero h1 {
+        width: 70%;
+        margin: auto;
+        color: #ffffff;
+        text-transform: capitalize;
+        text-align: center;
+        font-size: 36px;
+        font-weight: 300;
+    }
+}

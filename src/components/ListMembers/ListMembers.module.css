@@ -1,0 +1,39 @@
+.listWrapper {
+    width: 20%;
+    height: 78vh;
+    background-color: #ffffff;
+    border-radius: 20px;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+}
+
+.listWrapper h3 {
+    color: #64666c;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+.list {
+    display: flex;
+    align-items: center;
+    column-gap: 20px;
+    border-bottom: 1px solid #d9d9d9;
+    padding: 10px 0;
+}
+
+.avatar {
+    width: 50px;
+}
+
+.userWrapper p:nth-child(2) {
+    font-size: 0.8rem;
+    color: #1c91f4;
+}
+
+@media screen and (max-width: 1280px) {
+    .listWrapper {
+        width: 25%;
+    }
+}
