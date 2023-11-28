@@ -46,4 +46,4 @@ Start the server
 - CRUD Project Board and Task
 
 ## Demo
-https://jiru-project-management-xi.vercel.app/login
+https://inspiring-tartufo-066ac5.netlify.app/
